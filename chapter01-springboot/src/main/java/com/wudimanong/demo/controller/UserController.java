@@ -19,7 +19,7 @@ public class UserController {
     @Autowired
     UserDao userDao;
 
-    @RequestMapping(value = "/addUser", method = RequestMethod.POST)
+    @RequestMapping(value = "/addUser", method = RequestMethod.POST)//模擬一個修改上傳
     public User getUserById(@RequestParam(value = "username") String username,
             @RequestParam(value = "password") String password) {
         User user = new User();
