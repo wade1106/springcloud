@@ -26,6 +26,7 @@ public class UserController {
         user.setUsername(username);
         user.setPassword(password);
         userDao.addUser(user);
+        //這是branch test 的code
         return user;
     }
 }
